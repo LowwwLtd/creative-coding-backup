@@ -1,6 +1,7 @@
 const Hapi = require('@hapi/hapi');
 const Inert = require('@hapi/inert');
 const path = require('path');
+const Gate = require('./gate');
 const routes = require('./routes');
 
 const init = async () => {
@@ -19,6 +20,10 @@ const init = async () => {
     });
 
     await server.register(Inert);
+    await server.register({
+        plugin: Gate,
+        options: { https: true, www: true },
+    });
 
     server.route(routes);
 

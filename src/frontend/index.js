@@ -1,6 +1,7 @@
 import React from 'react';
 import { render } from 'react-dom';
 import { Router } from 'react-router-dom';
+
 import history from 'app/history';
 import { Application } from 'app/application';
 import 'app/styles/index.scss';
