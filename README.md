@@ -2,6 +2,12 @@
 
 creative coding platform.
 
+## Architecture
+
+-   production - https://www.creative-coding.com
+-   cms = https://cms.creative-coding.com
+-   staging = https://staging.creative-coding.com
+
 ## Example
 
 https://github.com/sanity-io/tutorial-sanity-blog-react-next

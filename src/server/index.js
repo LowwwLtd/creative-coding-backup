@@ -22,7 +22,10 @@ const init = async () => {
     await server.register(Inert);
     await server.register({
         plugin: Gate,
-        options: { https: true, www: true },
+        options: {
+            https: process.env.SERVER_HTTPS || false,
+            www: process.env.SERVER_WWW || true,
+        },
     });
 
     server.route(routes);
