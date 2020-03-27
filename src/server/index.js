@@ -28,6 +28,13 @@ const init = async () => {
         },
     });
 
+    console.log(
+        'SERVER_HTTPS',
+        process.env.SERVER_HTTPS,
+        process.env.SERVER_HTTPS === 'true'
+    );
+    console.log('SERVER_WWW', process.env.SERVER_WWW);
+
     server.route(routes);
 
     // when all routes fail, redirect to index.
