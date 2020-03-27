@@ -1,5 +1,15 @@
 .home {
     display: flex;
+    flex-direction: column;
+
+    header {
+        padding: 20px;
+        background-color: #f9f9f9;
+    }
+
+    .list {
+        display: flex;
+    }
 
     &__thumb {
         width: 25%;

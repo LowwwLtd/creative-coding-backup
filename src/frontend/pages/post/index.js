@@ -1,7 +1,7 @@
 /* eslint-disable react/jsx-props-no-spreading */
 /* eslint-disable react/prop-types */
 import React from 'react';
-import { withRouter } from 'react-router-dom';
+import { Link, withRouter } from 'react-router-dom';
 import imageUrlBuilder from '@sanity/image-url';
 import BlockContent from '@sanity/block-content-to-react';
 import SyntaxHighlighter from 'react-syntax-highlighter';
@@ -29,6 +29,7 @@ const postPageClass = ({ match }) => {
 
     return (
         <article>
+            <Link to="/">Go Back</Link>
             <h1>{title}</h1>
             <span>By Author {name}</span>
             {authorImage && (
