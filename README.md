@@ -4,9 +4,9 @@ creative coding platform.
 
 ## Architecture
 
--   production - https://www.creative-coding.com
--   cms = https://cms.creative-coding.com
--   staging = https://staging.creative-coding.com
+-   production (https://www.creative-coding.com or https://lowww-cc.herokuapp.com)
+-   cms (https://cms.creative-coding.com or https://lowww-cc-cms.herokuapp.com or https://creative-coding.sanity.studio/)
+-   staging (https://staging.creative-coding.com or https://lowww-cc-staging.herokuapp.com)
 
 ## Example
 
