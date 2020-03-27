@@ -18,6 +18,23 @@ const serializers = {
                 </SyntaxHighlighter>
             );
         },
+        gallery: ({ node = {} }) => {
+            return (
+                <ul>
+                    {node.images.map(image => (
+                        <li key={image._key}>
+                            <img
+                                src={imageUrlBuilder(client)
+                                    .image(image)
+                                    .width(200)
+                                    .url()}
+                                alt={image.alt}
+                            />
+                        </li>
+                    ))}
+                </ul>
+            );
+        },
     },
 };
 
